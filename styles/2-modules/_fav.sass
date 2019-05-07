@@ -1,0 +1,43 @@
+.home-page
+	section.fav
+		+container
+		img
+			max-width: 100%
+			max-height: 100%
+
+		h3
+			text-transform: uppercase
+			text-align: center
+			margin-top: 50px
+			@media (min-width: 647px)
+				margin-top: 0px
+
+		p
+			text-align: center
+
+		a
+			text-decoration: none
+			display: block
+			margin: 0 auto
+			text-align: center
+			font-weight: 400
+			text-transform: uppercase
+
+
+		span.strike-through
+			text-decoration: line-through
+			color: $light-gray
+		span.price-color
+			color: #3498db
+
+		.fav-image
+			display: block
+			@media (min-width: 647px)
+				float: left
+				padding: 10px
+
+				&:nth-child(-n+6)
+					width: 25%
+
+
+

@@ -1,0 +1,27 @@
+doctype html
+html 
+	head
+		meta(charset='utf-8')
+		meta(name='description' content='')
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		title Welford Bouquet
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/main.css")
+		<link rel="icon" type="image/ico" href="#"> 
+		script(src='scripts/modernizr.js')
+
+		body
+			include partials/home.pug
+
+			//- Google Analytics: change UA-XXXXX-X to be your site's ID.
+			script.
+				(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+				function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+				e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+				e.src='//www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+				ga('create','UA-66629397-1');ga('send','pageview');
+
+
+			script(src='scripts/jquery.min.js')
+			script(src='scripts/main.js')

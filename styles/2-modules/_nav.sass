@@ -1,0 +1,83 @@
+.home-page
+
+	.site-header
+		+container
+
+	span
+		color: #54d17a
+
+	hr
+		display: block
+		color: $lighter-gray
+		background-color: $lighter-gray
+		height: 2px
+		border: 0
+
+	label
+		display: none
+
+		@media (max-width: 840px)
+			display: block
+			cursor: pointer
+			width: 26px
+			margin: 0 auto
+			font-size: 26px
+			line-height: 70px
+
+	#toggle
+		display: none
+		&:checked + .menu
+			display: block
+
+
+	h1.site-title
+		text-transform: uppercase
+		text-align: center
+		margin-top: 18px
+
+	nav.main-nav
+		
+		.fa-search
+			@media (min-width: 840px)
+				float: left
+				font-size: 20px
+				line-height: 2
+		.fa-shopping-cart
+			@media (min-width: 840px)
+				font-size: 20px
+				float: right
+				line-height: 2
+
+		.nav-menu
+			@media (min-width: 840px)
+				display: inline-block
+
+		ul
+			list-style-type: none
+			text-align: center
+			@media (max-width: 840px)
+				display: none
+				padding: 0
+				margin: 0
+				line-height: 2.3
+
+		li
+
+			text-align: center
+			display: inline-block
+			margin: 5px 15px
+
+			@media (max-width: 840px)
+				display: block
+				text-align: center
+
+		.fa
+			color: $light-gray
+
+		a
+			text-decoration: none
+			font-weight: 400
+
+	.footer-nav
+		a
+			text-transform: uppercase
