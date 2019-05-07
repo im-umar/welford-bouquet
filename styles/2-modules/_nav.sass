@@ -37,16 +37,16 @@
 
 	nav.main-nav
 		
+		.fa-search, .fa-shopping-cart
+			font-size: 17px
+			@media (min-width: 840px)
+				line-height: 2
 		.fa-search
 			@media (min-width: 840px)
 				float: left
-				font-size: 20px
-				line-height: 2
 		.fa-shopping-cart
 			@media (min-width: 840px)
-				font-size: 20px
 				float: right
-				line-height: 2
 
 		.nav-menu
 			@media (min-width: 840px)
@@ -70,6 +70,7 @@
 			@media (max-width: 840px)
 				display: block
 				text-align: center
+				line-height: 2.6
 
 		.fa
 			color: $light-gray
@@ -77,6 +78,8 @@
 		a
 			text-decoration: none
 			font-weight: 400
+			@media (max-width: 840px)
+				text-transform: uppercase
 
 	.footer-nav
 		a

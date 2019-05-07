@@ -31,9 +31,13 @@ body { background: white; font-family: "Lato", sans-serif; height: 100%; line-he
 
 .home-page h1.site-title { text-transform: uppercase; text-align: center; margin-top: 18px; }
 
-@media (min-width: 840px) { .home-page nav.main-nav .fa-search { float: left; font-size: 20px; line-height: 2; } }
+.home-page nav.main-nav .fa-search, .home-page nav.main-nav .fa-shopping-cart { font-size: 17px; }
 
-@media (min-width: 840px) { .home-page nav.main-nav .fa-shopping-cart { font-size: 20px; float: right; line-height: 2; } }
+@media (min-width: 840px) { .home-page nav.main-nav .fa-search, .home-page nav.main-nav .fa-shopping-cart { line-height: 2; } }
+
+@media (min-width: 840px) { .home-page nav.main-nav .fa-search { float: left; } }
+
+@media (min-width: 840px) { .home-page nav.main-nav .fa-shopping-cart { float: right; } }
 
 @media (min-width: 840px) { .home-page nav.main-nav .nav-menu { display: inline-block; } }
 
@@ -43,11 +47,13 @@ body { background: white; font-family: "Lato", sans-serif; height: 100%; line-he
 
 .home-page nav.main-nav li { text-align: center; display: inline-block; margin: 5px 15px; }
 
-@media (max-width: 840px) { .home-page nav.main-nav li { display: block; text-align: center; } }
+@media (max-width: 840px) { .home-page nav.main-nav li { display: block; text-align: center; line-height: 2.6; } }
 
 .home-page nav.main-nav .fa { color: #95a5a6; }
 
 .home-page nav.main-nav a { text-decoration: none; font-weight: 400; }
+
+@media (max-width: 840px) { .home-page nav.main-nav a { text-transform: uppercase; } }
 
 .home-page .footer-nav a { text-transform: uppercase; }
 
